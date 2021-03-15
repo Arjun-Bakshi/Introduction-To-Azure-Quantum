@@ -3,6 +3,7 @@
 --build-exe
 --input
     "C:\VSCode\GitCreate\Introduction-To-Azure-Quantum\Develop_with_QSharp\Program.qs"
+    "C:\VSCode\GitCreate\Introduction-To-Azure-Quantum\Develop_with_QSharp\Qrng.qs"
 --output
     "C:/VSCode/GitCreate/Introduction-To-Azure-Quantum/Develop_with_QSharp/obj/qsharp/"
 --references

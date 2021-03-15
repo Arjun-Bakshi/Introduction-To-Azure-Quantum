@@ -1,0 +1,1 @@
+![](https://azure.microsoft.com/images/page/resources/development-kit/quantum-computing/val-prop1.gif)

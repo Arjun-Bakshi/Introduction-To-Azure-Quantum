@@ -34,10 +34,20 @@ namespace Develop_with_QSharp
             set;
         }
 
+        protected ICallable<QVoid, Result> SampleQuantumRandomNumberGenerator__
+        {
+            get;
+            set;
+        }
+
         public override Func<QVoid, QVoid> __Body__ => (__in__) =>
         {
 #line 8 "C:\\VSCode\\GitCreate\\Introduction-To-Azure-Quantum\\Develop_with_QSharp\\Program.qs"
             Message__.Apply("Hello quantum world!");
+#line 9 "C:\\VSCode\\GitCreate\\Introduction-To-Azure-Quantum\\Develop_with_QSharp\\Program.qs"
+            var num = SampleQuantumRandomNumberGenerator__.Apply(QVoid.Instance);
+#line 10 "C:\\VSCode\\GitCreate\\Introduction-To-Azure-Quantum\\Develop_with_QSharp\\Program.qs"
+            Message__.Apply(String.Format("{0}", num));
 #line hidden
             return QVoid.Instance;
         }
@@ -46,6 +56,7 @@ namespace Develop_with_QSharp
         public override void __Init__()
         {
             this.Message__ = this.__Factory__.Get<ICallable<String, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Message));
+            this.SampleQuantumRandomNumberGenerator__ = this.__Factory__.Get<ICallable<QVoid, Result>>(typeof(SampleQuantumRandomNumberGenerator));
         }
 
         public override IApplyData __DataIn__(QVoid data) => data;

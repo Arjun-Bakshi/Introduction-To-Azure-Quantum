@@ -6,5 +6,7 @@ namespace Develop_with_QSharp {
     @EntryPoint()
     operation SayHello() : Unit {
         Message("Hello quantum world!");
+        let num = SampleQuantumRandomNumberGenerator();
+        Message($"{num}");
     }
 }

@@ -8,5 +8,7 @@ namespace Develop_with_QSharp {
         Message("Hello quantum world!");
         let num = SampleQuantumRandomNumberGenerator();
         Message($"{num}");
+        let num_range = SampleRandomNumber();
+        Message($"{num_range}");
     }
 }
